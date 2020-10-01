@@ -1,4 +1,11 @@
 # node-searchkick
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/mati365/node-searchkick?style=flat-square)
+![GitHub issues](https://img.shields.io/github/issues/mati365/node-searchkick?style=flat-square)
+[![HitCount](http://hits.dwyl.com/mati365/node-searchkick.svg)](http://hits.dwyl.com/mati365/node-searchkick)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+
 Simple OOP searchkick alternative for TypeORM / other Node.js ORMs written in TypeScript.
 
 # License
