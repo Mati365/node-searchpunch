@@ -1,0 +1,38 @@
+{
+  "scripts": {
+    "test": "node_modules/.bin/jest --c config/jest.config.js",
+    "build": "NODE_ENV=production node_modules/.bin/webpack --config=config/webpack.config.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn test"
+    }
+  },
+  "main": "dist/union-struct.js",
+  "types": "dist/union-stuct.d.ts",
+  "devDependencies": {
+    "@types/jest": "^26.0.14",
+    "@typescript-eslint/eslint-plugin": "^4.3.0",
+    "@typescript-eslint/parser": "^4.3.0",
+    "eslint": "^7.10.0",
+    "eslint-config-airbnb-typescript": "^11.0.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.21.3",
+    "eslint-plugin-react-hooks": "^4.1.2",
+    "husky": "^4.3.0",
+    "jest": "^26.4.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "reflect-metadata": "^0.1.13",
+    "ts-jest": "^26.4.1",
+    "ts-loader": "^8.0.4",
+    "tslib": "^2.0.1",
+    "typescript": "^4.0.3",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
+  },
+  "name": "node-searchpunk"
+}
