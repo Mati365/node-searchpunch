@@ -1,9 +1,9 @@
 # node-searchpunch :punch:
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/mati365/node-searchpunch?style=flat-square)
-![GitHub issues](https://img.shields.io/github/issues/mati365/node-searchpunch?style=flat-square)
-[![HitCount](http://hits.dwyl.com/mati365/node-searchpunch.svg)](http://hits.dwyl.com/mati365/node-searchpunch)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/Mati365/node-searchpunch?style=flat-square)
+![GitHub issues](https://img.shields.io/github/issues/Mati365/node-searchpunch?style=flat-square)
+[![HitCount](http://hits.dwyl.com/Mati365/node-searchpunch.svg)](http://hits.dwyl.com/Mati365/node-searchpunch)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
 Simple OOP Searchkick alternative for TypeORM / other Node.js ORMs written in TypeScript. Provides out of the box integration with ORM class entites by providing them reindex and search methods.
