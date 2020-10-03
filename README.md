@@ -8,6 +8,24 @@
 
 Simple OOP Searchkick alternative for TypeORM / other Node.js ORMs written in TypeScript. Provides out of the box integration with ORM class entites by providing them reindex and search methods.
 
+## Goals
+
+- [] Type safe ES mappings
+
+- [] Query like SQL syntax
+
+- [] Partial or full reindex detection (after save record)
+
+- [] Stemming and Language support
+
+- [] Synonyms and Misspellings support
+
+- [] Suggestions support
+
+- [] Aggregations support
+
+- [] TypeORM / Mikro-ORM drivers
+
 ## License
 
 The MIT License (MIT) Copyright (c) 2020 Mateusz Bagiński
