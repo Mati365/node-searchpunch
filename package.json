@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "test": "node_modules/.bin/jest --c config/jest.config.js",
+    "test": "node_modules/.bin/jest --passWithNoTests --c config/jest.config.js",
     "build": "NODE_ENV=production node_modules/.bin/webpack --config=config/webpack.config.js"
   },
   "husky": {
@@ -8,8 +8,9 @@
       "pre-commit": "yarn test"
     }
   },
-  "main": "dist/union-struct.js",
-  "types": "dist/union-stuct.d.ts",
+  "workspaces": [
+    "packages/*"
+  ],
   "devDependencies": {
     "@types/jest": "^26.0.14",
     "@typescript-eslint/eslint-plugin": "^4.3.0",
@@ -34,5 +35,5 @@
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12"
   },
-  "name": "node-searchpunk"
+  "private": true
 }

@@ -19,8 +19,13 @@ module.exports = {
   },
   projects: [
     {
-      displayName: 'union-struct',
-      rootDir: resolve(__dirname, '../tests/'),
+      displayName: 'searchpunk-core',
+      rootDir: resolve(__dirname, '../packages/searchpunch-core/tests/'),
+      ...SHARED_CONFIG,
+    },
+    {
+      displayName: 'searchpunk-typeorm-driver',
+      rootDir: resolve(__dirname, '../packages/searchpunch-typeorm-driver/tests/'),
       ...SHARED_CONFIG,
     },
   ],
