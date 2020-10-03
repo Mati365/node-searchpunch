@@ -1,4 +1,8 @@
 {
   "name": "@searchpunch/core",
-  "main": "src/main.ts"
+  "main": "src/index.ts",
+  "version": "1.0.0",
+  "dependencies": {
+    "@elastic/elasticsearch": ">=5.0.0"
+  }
 }

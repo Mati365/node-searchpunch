@@ -1,4 +1,5 @@
 {
   "name": "@searchpunch/typeorm",
-  "main": "src/main.ts"
+  "main": "src/main.ts",
+  "version": "1.0.0"
 }
