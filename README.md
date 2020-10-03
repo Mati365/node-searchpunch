@@ -10,21 +10,21 @@ Simple OOP Searchkick alternative for TypeORM / other Node.js ORMs written in Ty
 
 ## Goals
 
-- [] Type safe ES mappings
+- [ ] Type safe ES mappings
 
-- [] Query like SQL syntax
+- [ ] Query like SQL syntax
 
-- [] Partial or full reindex detection (after save record)
+- [ ] Partial or full reindex detection (after save record)
 
-- [] Stemming and Language support
+- [ ] Stemming and Language support
 
-- [] Synonyms and Misspellings support
+- [ ] Synonyms and Misspellings support
 
-- [] Suggestions support
+- [ ] Suggestions support
 
-- [] Aggregations support
+- [ ] Aggregations support
 
-- [] TypeORM / Mikro-ORM drivers
+- [ ] TypeORM / Mikro-ORM drivers
 
 ## License
 
