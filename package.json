@@ -1,7 +1,7 @@
 {
   "scripts": {
     "test": "node_modules/.bin/jest --passWithNoTests --c config/jest.config.js",
-    "build": "NODE_ENV=production node_modules/.bin/webpack --config=config/webpack.config.js"
+    "develop": "rm -rf ./dist/ && NODE_ENV=development node_modules/.bin/webpack --watch --config=config/webpack.config.js"
   },
   "husky": {
     "hooks": {
@@ -25,6 +25,7 @@
     "eslint-plugin-react-hooks": "^4.1.2",
     "husky": "^4.3.0",
     "jest": "^26.4.2",
+    "nodemon-webpack-plugin": "^4.3.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "reflect-metadata": "^0.1.13",

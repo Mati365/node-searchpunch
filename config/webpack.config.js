@@ -1,11 +1,18 @@
 const path = require('path');
+const NodemonPlugin = require('nodemon-webpack-plugin');
+
+const {NODE_ENV} = process.env;
+const devBuild = NODE_ENV !== 'production';
 
 const pkgResolve = (pkgPath) => path.resolve(__dirname, path.join('../', pkgPath));
-
-module.exports = {
-  mode: 'production',
-  target: 'web',
-  entry: pkgResolve('src/main.ts'),
+const createBuildConfig = ({entry, output, withNodemon}) => ({
+  mode: NODE_ENV || 'development',
+  watch: devBuild,
+  target: 'node',
+  entry: pkgResolve(entry),
+  resolve: {
+    extensions: ['.ts', '.js', '.json'],
+  },
   module: {
     rules: [
       {
@@ -29,7 +36,18 @@ module.exports = {
     ],
   },
   output: {
-    filename: 'union-struct.js',
+    filename: output,
     path: path.resolve(__dirname, '../dist/'),
   },
-};
+  plugins: [
+    ...withNodemon ? [new NodemonPlugin] : [],
+  ],
+});
+
+module.exports = createBuildConfig(
+  {
+    entry: 'packages/searchpunch-core/src/index.ts',
+    output: 'searchpunch-core.js',
+    withNodemon: true,
+  },
+);
